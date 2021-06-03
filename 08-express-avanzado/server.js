@@ -18,7 +18,7 @@ const server = app.listen(puerto, () => {
 
 app.get('/',(req,res)=>{
 
-    res.send(`<h1 style="color:blue;"> ${productos}</h1>`)
+    res.send(`<h1 style="color:blue;"> Bienvenido al server</h1>`)
 })
 
 app.get('/api/productos/listar', (req, res) => {

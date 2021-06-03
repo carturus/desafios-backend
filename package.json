@@ -1,7 +1,6 @@
 {
   "name": "desafiorepositoriogit",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +11,12 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "bugs": {
     "url": "https://github.com/carturus/desafios-backend/issues"
   },
-  "homepage": "https://github.com/carturus/desafios-backend#readme"
+  "homepage": "https://github.com/carturus/desafios-backend#readme",
+  "description": ""
 }
