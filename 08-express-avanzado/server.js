@@ -37,12 +37,6 @@ app.post('/api/productos/guardar', (req, res) => {
     res.send(items.guardar(req.body,id))
 });
 
-app.get('/api/mensajes',(req,res)=>{
-    return res.send(req.query)
-
-})
-
-
 // en caso de error, avisar
 server.on('error', error => {
     console.log('error en el servidor:', error);
