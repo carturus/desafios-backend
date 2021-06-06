@@ -1,15 +1,16 @@
 const express = require('express');
+const app = express();
 const router = express.Router();
-
-
 const items = require('./api/productos');
 
 let id=0;
 // creo una app de tipo express
-const app = express();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api',router);
+app.use('/static', express.static(__dirname + '/public'));
+
 // completar el codigo...
 
 
@@ -37,6 +38,12 @@ router.get('/productos/listar/:id', (req, res) => {
 router.post('/productos/guardar', (req, res) => {
    
     res.send(items.guardar(req.body))
+
+});
+
+router.get('/', (req, res) => {
+   
+    res.sendFile('index')
 
 });
 
