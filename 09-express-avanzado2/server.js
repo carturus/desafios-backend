@@ -4,12 +4,12 @@ const router = express.Router();
 
 const items = require('./api/productos');
 
-let id=0
+let id=0;
 // creo una app de tipo express
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/apo',router);
+app.use('/api',router);
 // completar el codigo...
 
 
@@ -30,16 +30,31 @@ router.get('/productos/listar', (req, res) => {
     res.send(items.listar())
 });
 router.get('/productos/listar/:id', (req, res) => {
-   // res.send(items.productos[req.params.id+1])
+  
    res.send(items.listar(req.params.id))
 });
 
 router.post('/productos/guardar', (req, res) => {
-   // items.productos.push(req.body)
-   id++
    
-    res.send(items.guardar(req.body,id))
+    res.send(items.guardar(req.body))
+
 });
+
+
+router.put('/productos/editar/:id', (req, res) => {
+ 
+    res.send(items.listar(req.params.id,req.body))
+ 
+ });
+ 
+ router.delete('/productos/borrar/:id', (req, res) => {
+
+    let eliminado=items.borrar(req.params.id)
+   
+    res.send(eliminado)
+
+ });
+ 
 
 // en caso de error, avisar
 server.on('error', error => {
