@@ -53,6 +53,7 @@ class Productos {
 
     guardar(producto){
         let idx= this.productos.length+1;
+        producto.price=parseInt(producto.price)
         this.productos.push({id: idx,...producto})
         return this.productos[idx-1]
     }
