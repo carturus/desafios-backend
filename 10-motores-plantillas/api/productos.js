@@ -42,6 +42,7 @@ class Productos {
         if(id <=  this.productos.length){
 
             this.productos.splice(id-1, 1, {id: id,...producto})
+       
            return this.productos[id-1]
         }  
         else
@@ -54,7 +55,7 @@ class Productos {
         let id= this.productos.length+1;
         producto.price=parseInt(producto.price)
         this.productos.push({id: id,...producto})
-        return this.productos[id    -1]
+        return this.productos[id-1]
     }
     // agregar los metodos requeridos
 }

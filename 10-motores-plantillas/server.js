@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
 const router = express.Router();
+const routerVista = express.Router();
 const items = require('./api/productos');
+const handlebars = require("express-handlebars")
+
 
 let id=0;
 // creo una app de tipo express
@@ -9,10 +12,23 @@ let id=0;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api',router);
+app.use('/productos',routerVista)
 app.use('/static', express.static(__dirname + '/public'));
 
-// completar el codigo...
+//establecemos la conf de handlebars
+app.engine(
+    "hbs",
+    handlebars({
+        extname: '.hbs',
+        defaultLayout: 'index.hbs',
+        layoutsDir:__dirname+'/views/layouts',
+        partialsDir:__dirname+'/views/partials/'
+    })
+)
 
+app.set('view engine','hbs');
+
+app.set('views','./views')
 
 // pongo a escuchar el servidor en el puerto indicado
 const puerto = 8080;
@@ -20,6 +36,19 @@ const puerto = 8080;
 const server = app.listen(puerto, () => {
     console.log(`servidor escuchando en http://localhost:${puerto}`);
 });
+
+//Rutas Plantillas
+
+routerVista.get('/guardar',(req,res)=>{ 
+    res.render('guardar')
+})
+routerVista.get('/vista',(req,res)=>{
+   
+     res.render('vista',{productos:items.listar(), hayProductos: items.listar().error== undefined})
+ })
+
+
+//Rutas API
 
 router.get('/',(req,res)=>{
 
@@ -36,8 +65,8 @@ router.get('/productos/listar/:id', (req, res) => {
 });
 
 router.post('/productos/guardar', (req, res) => {
-   
-    res.send(items.guardar(req.body))
+   items.guardar(req.body)
+    res.redirect('/productos/guardar')
 
 });
 

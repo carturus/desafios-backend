@@ -1,0 +1,15 @@
+[{
+    "title":"lapiz",
+    "price":15,
+    "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-256.png"
+},
+{
+    "title":"escuadra",
+    "price":10,
+    "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png"
+},
+{
+    "title":"calculadora",
+    "price":10,
+    "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png"
+}]
