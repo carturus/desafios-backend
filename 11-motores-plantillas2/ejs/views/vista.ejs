@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prodcutos</title>
+    <!-- NAVIGATION -->
+
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <td>No</td>
+                <td>Producto</td>
+                <td>Precio</td>
+                <td>Foto</td>
+              </tr>
+            </thead>
+            <tbody>
+              <% if (hayProductos) { %> <% for(var i = 0; i < productos.length;
+              i++) { %>
+              <tr>
+                <td><%= (i+1)%></td>
+                <td><%= productos[i].title%></td>
+                <td><%= productos[i].price%></td>
+                <td>
+                  <img
+                    width="50"
+                    src="<%= productos[i].thumbnail%>"
+                    alt="not found"
+                  />
+                </td>
+              </tr>
+              <% } %> <% }else{ %>
+              <h3 class="alert alert-warning">No se encontraron productos</h3>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+extends layout
+
+block vista
+
+    div(class='jumbotron')
+        
+        if hayProductos
+         - var i= 0
+         h1(class='text-center') Productos
+         table(class='table table-dark')
+             tr
+                 td N
+                 td Producto
+                 td Precio
+                 td Foto          
+             each producto in productos
+                tr
+                    td=++i
+                    td=producto.title
+                    td=producto.price
+                    td
+                        img(src=producto.thumbnail width=50 heigth=50)
+    
+        else
+            h2(class="alert alert-warning") No se encontraron productos
+           
+//- <div class="jumbotron">
+//-     <h1>Vista de Productos</h1>
+//-     <br>
+
+//-     {{#if hayProductos}} 
+//-         <div class="table-responsive">
+//-             <table class="table table-dark">
+//-                 <tr> <th>Nombre</th> <th>Precio</th> <th>Foto</th></tr>
+//-                 {{#each productos}}
+//-                     <tr> <td>{{this.title}}</td> <td>${{this.price}}</td> <td><img width="50" src={{this.thumbnail}} alt="not found"></td> </tr>
+//-                 {{/each}}
+//-             </table>
+//-         </div>
+//-     {{else}}  
+//-         <h3 class="alert alert-warning">No se encontraron productos</h3>
+//-     {{/if}}
+//- </div>
