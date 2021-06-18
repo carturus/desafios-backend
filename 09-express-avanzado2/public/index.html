@@ -1,18 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario de Ingreso de Productos</title>
+    <meta charset="utf-8" />
+
+    <meta
+      name="description"
+      content="Open Health Imaging Foundation DICOM Viewer"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- WEB FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Sanchez"
+      rel="stylesheet"
+    />
+
+    <title>VISOR LIGERO MEDIK</title>
   </head>
 
   <body>
-    <h2>Ingrese Producto</h2>
-    <form action="/api/productos/guardar" method="POST">
-      Nombre: <input type="text" name="title" /> Precio:
-      <input type="number" name="price" /> Foto URL:
-      <input type="text" name="thumbnail" />
-      <button>Enviar</button>
-    </form>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div>hola</div>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/@ohif/viewer@1.0.3/dist/index.umd.js" crossorigin></script>
+    <script>
+      var containerId = "root";
+      var componentRenderedOrUpdatedCallback = function () {
+        console.log("OHIF Viewer rendered/updated");
+      };
+      window.OHIFViewer.installViewer(
+        {
+          // routerBasename: '/',
+          servers: {
+            dicomWeb: [
+              {
+                name: "DCM4CHEE",
+                wadoUriRoot:
+                  "https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado",
+                qidoRoot:
+                  "https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs",
+                wadoRoot:
+                  "https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs",
+                qidoSupportsIncludeField: true,
+                imageRendering: "wadors",
+                thumbnailRendering: "wadors",
+              },
+            ],
+          },
+        },
+        containerId,
+        componentRenderedOrUpdatedCallback
+      );
+    </script>
   </body>
 </html>
