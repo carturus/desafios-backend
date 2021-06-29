@@ -12,6 +12,7 @@ const leer = async (random) =>{
         const contenido = await fs.promises.readFile('./productos.txt', 'utf-8')
         const arrayItems = JSON.parse(contenido)
         const cantidadItems =arrayItems.length;
+        console.log(arrayItems)
        if(random){
      return JSON.stringify({productos: arrayItems, cantidad: cantidadItems})
        }else{
