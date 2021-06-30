@@ -6,7 +6,7 @@ carritoRouter.get('/listar', (req, res) => {
     res.json(carrito.listar());
 });
 
-carritoRouter.post('/agregar/:id', (req, res) => {
+carritoRouter.post('/agregar/:id',(req, res) => {
     let { id } = req.params;
     res.json(carrito.agregarPorId(id));
 });
