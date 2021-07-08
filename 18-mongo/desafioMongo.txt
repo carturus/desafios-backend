@@ -1,0 +1,12 @@
+//Creamos base de datos prueb
+use prueba
+//Creamos coleccion implicita con primeros valores
+db.items.insert({nombre: 'Fiedos',categoria:'Harina', stock:20})
+//Insertamos nuevos valores
+db.items.insert([{nombre: 'Leche',categoria:'Lacteos', stock:30},{nombre:'crema',categoria:'Lacteos',stock:15}])
+//Listamos valores
+db.items.find()
+//Mostramos collecion creada
+> show collections
+//Mostramos db creada
+> show dbs
