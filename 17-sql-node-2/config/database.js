@@ -4,7 +4,7 @@ const mysql = {
         host: '127.0.0.1',
         user: 'root',
         password: 'prueba',
-        database: 'productos'
+        database: 'prueba'
     },
     pool: { min: 0, max: 7 }
 }

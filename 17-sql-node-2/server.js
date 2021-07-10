@@ -6,7 +6,7 @@ const handlebars = require('express-handlebars');
 const http = require('http').Server(app);
 const items = require('./api/productos');
 const io = require('socket.io')(http);
-const {persistenciaMensajes}= require('./knex/accesoBase');
+const {persistenciaMensajes}= require('./knex/accesoSqlite');
 
 
 const messages = [
@@ -71,7 +71,7 @@ routerVista.get('/vista',(req,res)=>{
 
 //Rutas API
 
-const productosRouter = require('./routes/productos');
+const productosRouter = require('./routes/productosRouter');
 app.use('/productos', productosRouter);
 
 // obtengo el puerto del enviroment o lo seteo por defecto

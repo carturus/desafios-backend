@@ -1,63 +1,41 @@
+const {listarProductos}= require('../knex/accesoMysql');
+const {insertarProducto}= require('../knex/accesoMysql');
+const {buscarProducto}= require('../knex/accesoMysql');
+const {actualizarProducto}= require('../knex/accesoMysql');
+const {eliminarProducto}= require('../knex/accesoMysql');
+const {crearTabla}= require('../knex/accesoMysql');
+
 class Productos {
     constructor() {
-        // incializar variables
-        this.productos=[]
+        //CrearTabla();
+        (async () => { 
+            let result;
+            result= await crearTabla();
+            this.productos=result; 
+          })()         
     }
 
-    listar(id){
-        if(id){
-             if(id <=  this.productos.length)
-                return this.productos[id-1]
-             else
-                return {error: "producto no encontrado"}
-        }
-        else{
-            if(this.productos.length>0)
-                return this.productos
-            else
-                return {error: "no hay productos cargados"}
-        }
+
+   async listar() {
+        return await listarProductos();
     }
 
-    borrar(id){
-
-             if(id <=  this.productos.length){
-                let eliminado= this.productos[id-1]
-                let orden=1;
-                this.productos.splice(id-1, 1);
-
-                this.productos.forEach(elemento=>{
-                    elemento.id=orden
-                    orden++
-
-                })
-                return eliminado
-             }  
-             else
-                return {error: "producto no encontrado"}
-
+    async buscarPorId(id) {
+        return await  buscarProducto(id);
     }
-    editar(id,producto){
 
-        if(id <=  this.productos.length){
-
-            this.productos.splice(id-1, 1, {id: id,...producto})
-       
-           return this.productos[id-1]
-        }  
-        else
-           return {error: "producto no encontrado"}
-
-}
-
-
-    guardar(producto){
-        let id= this.productos.length+1;
-        producto.price=parseInt(producto.price)
-        this.productos.push({id: id,...producto})
-        return this.productos[id-1]
+    async guardar(producto) {
+        return await insertarProducto(producto);
     }
-    // agregar los metodos requeridos
+
+    async actualizar(id, datos) {
+        return await actualizarProducto(id,datos);
+    }
+
+    async borrar(id) {
+        return await eliminarProducto(id);
+    }
+    
 }
 
 // exporto una instancia de la clase

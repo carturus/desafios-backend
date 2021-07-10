@@ -7,6 +7,7 @@ const persistenciaMensajes =(messages)=>{
 knexSqlite.from('messages').select('*')
 .then(rows => {
     //verifico tabla
+    console.log(rows)
     for (row of rows) {
         console.log(`${row['id']} ${row['author']}  ${row['date']} ${row['text']}`);
     }
