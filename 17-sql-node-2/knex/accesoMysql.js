@@ -1,4 +1,3 @@
-const { actualizar } = require('../api/productos');
 const options = require('../config/database');
 const knex = require('knex')(options.mysql);
 

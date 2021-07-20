@@ -1,0 +1,4 @@
+[{"Persistencia":"mongo"},
+    {"Persistencia":"mysql"},
+    {"Persistencia":"nube"}]
+

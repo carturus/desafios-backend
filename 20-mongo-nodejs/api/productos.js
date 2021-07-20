@@ -9,8 +9,8 @@ class Productos {
         (async () => { 
             let result;
             await mongoose.connect(config.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true });
-            result= await producto.find({});
-            this.productos=result; 
+            // result= await producto.find({});
+            // this.productos=result; 
           })()         
     }
 
@@ -27,9 +27,9 @@ class Productos {
         return await producto.create(item);
     }
 
-    async actualizar(id, datos) {
+    async actualizar(id, item) {
        // return await actualizarProducto(id,datos);
-       return await producto.updateOne({_id: id}, { $set: {title: datos.title, price:datos.price, thumbnail:datos.thumbnail}});
+       return await producto.updateOne({_id: id}, { $set: {title: item.title, price:item.price, thumbnail:item.thumbnail}});
     }
 
     async borrar(id) {

@@ -9,9 +9,7 @@ class Productos {
     constructor() {
         //CrearTabla();
         (async () => { 
-            let result;
-            result= await crearTabla();
-            this.productos=result; 
+             await crearTabla();       
           })()         
     }
 
@@ -24,12 +22,12 @@ class Productos {
         return await  buscarProducto(id);
     }
 
-    async guardar(producto) {
-        return await insertarProducto(producto);
+    async guardar(item) {
+        return await insertarProducto(item);
     }
 
-    async actualizar(id, datos) {
-        return await actualizarProducto(id,datos);
+    async actualizar(id, item) {
+        return await actualizarProducto(id,item);
     }
 
     async borrar(id) {
