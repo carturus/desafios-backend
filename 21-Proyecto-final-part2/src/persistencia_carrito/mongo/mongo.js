@@ -11,22 +11,45 @@ class Mongo{
     }
 
     async insertarProducto (item){ 
-        return await producto.create(item);
+        try{
+            return await producto.create(item);
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
     async listarProductos(){ 
-        return await producto.find({});
+        try{
+             return await producto.find({});
+            }
+        catch(error){
+                return {"Error":error}
+            }   
     }
     async buscarProducto(id){ 
+        try{
         return await producto.findById(id);
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
     async actualizarProducto(id,datos){ 
-
+        try{
         return await producto.updateOne({_id: id}, { $set: {title: item.title, price:item.price, thumbnail:item.thumbnail}});
-
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
 
     async eliminarProducto(id){ 
+        try{
         return await producto.deleteOne({ _id: id});
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
 }
 

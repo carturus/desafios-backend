@@ -11,24 +11,47 @@ class Mongo{
     }
 
     async insertarProducto (datos){ 
+        try{
         let item={timestamp_producto:Date.now(),...datos}
         return await producto.create(item);
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
     async listarProductos(){ 
+        try{
         return await producto.find({});
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
     async buscarProducto(id){ 
-
+        try{
         return await producto.findById(id)
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
-    async actualizarProducto(id,datos){ 
+    async actualizarProducto(id,item){ 
+        try{
 
         return await producto.updateOne({_id: id}, { $set: {title: item.title, price:item.price, thumbnail:item.thumbnail}});
-
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
 
     async eliminarProducto(id){ 
+        try{
         return await producto.deleteOne({ _id: id});
+        }
+        catch(error){
+            return {"Error":error}
+        }
     }
 }
 

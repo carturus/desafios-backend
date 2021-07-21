@@ -14,10 +14,8 @@ class MySql{
             
         }
         
-    catch{
-      
-        console.log('error:')
-        return []
+    catch(error){
+        return {"Error":error}
     }
     }
     //select
@@ -25,20 +23,18 @@ class MySql{
         try{ 
         return await knex.from('carrito').select('*')
         }
-        catch{
-        console.log('error:');
-        return []
-    }
+        catch(error){
+            return {"Error":error}
+        }
     }
     //Select por id
      async buscarProducto(id){ 
         try{ 
         return await knex.from('carrito').select('*').where('id', parseInt(id))
         }
-        catch{
-        console.log('error:');
-        return []
-    }
+        catch(error){
+            return {"Error":error}
+        }
     }
     
     //Actualizar producto
@@ -47,10 +43,9 @@ class MySql{
             console.log(datos)
         return  await knex.from('carrito').where('id', parseInt(id)).update({ price: datos.price , title: datos.title , thumbnail: datos.thumbnail })
         }
-        catch{
-        console.log('error:');
-        return []
-    }
+        catch(error){
+            return {"Error":error}
+        }
     }
     
     //Borrar producto
@@ -58,10 +53,9 @@ class MySql{
         try{ 
         return await knex.from('carrito').where('id', parseInt(id)).del()
         }
-        catch{
-        console.log('error:');
-        return []
-    }
+        catch(error){
+            return {"Error":error}
+        }
     }
 }
 
