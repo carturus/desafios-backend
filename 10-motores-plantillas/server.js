@@ -4,6 +4,7 @@ const router = express.Router();
 const routerVista = express.Router();
 const items = require('./api/productos');
 const handlebars = require("express-handlebars")
+const faker = require('faker');
 
 
 let id=0;
@@ -46,6 +47,21 @@ routerVista.get('/vista',(req,res)=>{
    
      res.render('vista',{productos:items.listar(), hayProductos: items.listar().error== undefined})
  })
+ routerVista.get('/vista-test', (req, res) => {
+    let cant=req.query.cant||10
+    let prods = []
+    for(let i=1; i<=cant ; i++){
+        prods.push({
+            id:i,
+            title:faker.commerce.product, 
+            price:faker.commerce.price,
+            thumbnail:faker.image.imageUrl,
+        })
+
+    }
+    res.render('vista', { productos: prods, hayProductos: prods.length });
+});
+
 
 
 //Rutas API

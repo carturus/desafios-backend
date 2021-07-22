@@ -32,4 +32,5 @@ router.get('/productos/vista', (req, res) => {
     res.render('lista', { productos: prods, hayProductos: prods.length });
 });
 
+
 module.exports = router;
