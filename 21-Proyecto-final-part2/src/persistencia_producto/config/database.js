@@ -9,14 +9,4 @@ const mysql = {
     pool: { min: 0, max: 7 }
 }
 
-const sqlite3 = {
-    client: 'sqlite3',
-    connection: {
-        filename: './db/messages.sqlite'
-    },
-    useNullAsDefault: true
-}
-
-exports.sqlite3 = sqlite3;
-
 exports.mysql = mysql;

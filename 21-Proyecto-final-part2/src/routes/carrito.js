@@ -6,6 +6,11 @@ carritoRouter.get('/listar', async (req, res) => {
     res.json(await carrito.listar());
 });
 
+carritoRouter.get('/listar/:id',async (req, res) => {
+    let { id } = req.params;
+    res.json(await carrito.buscarPorId(id));
+});
+
 carritoRouter.post('/agregar/:id',async (req, res) => {
     let { id } = req.params;
     res.json(await carrito.agregarPorId(id));

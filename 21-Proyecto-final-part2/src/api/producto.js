@@ -1,15 +1,13 @@
 const factory= require('../factory');
 const tipoPersistencia=require('../config/config.json')
 //tipoPersistenica 0 = Mongo, 1=Mysql, 2=Nube
-let Persistencia= factory.getPersistenciaProducto(tipoPersistencia[2].Persistencia)
-let instancia =new Persistencia();
+let instancia= factory.getPersistenciaProducto(tipoPersistencia[2].Persistencia,tipoPersistencia[2].Url)
 
 class Productos {
 
     constructor() {}
 
-    async listar() {
-        
+    async listar() {    
         return await instancia.listarProductos();
     }
 
@@ -19,12 +17,10 @@ class Productos {
 
     async guardar(item) {
         return await instancia.insertarProducto(item);
-
     }
 
     async actualizar(id, item) {
         return await instancia.actualizarProducto(id,item);
-
     }
 
     async borrar(id) {
