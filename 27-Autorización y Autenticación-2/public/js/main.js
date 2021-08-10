@@ -3,10 +3,27 @@ const socket = io.connect();
 socket.on('productos', function (productos) {
     document.getElementById('datos').innerHTML = data2TableHBS(productos)
 });
+
+/* obtengo el perfil */
+async function getProfile(event){
+    event.preventDefault();
+   fetch('http://localhost:8080/profile/')
+   .then(respuesta => respuesta.json())
+   .then(profile=> {
+    renderProfile(profile)
+   })
+}
+ function renderProfile(profile){
+     let htmlProfile= `
+     <img src=${profile.picture} width="50" height="50"/>
+     <h3>User:${profile.name}-${profile.mail}</h3> 
+ `
+ document.getElementById("profile").innerHTML = htmlProfile;
+ }
+
 /* obtengo el formulario */
 const form = document.querySelector('form');
-
-    function addProducto(event) {
+function addProducto(event) {
     event.preventDefault();
     const data = { title: form[0].value, price: form[1].value, thumbnail: form[2].value };
     console.log('soy el dat',JSON.stringify(data))

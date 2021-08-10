@@ -29,6 +29,7 @@ app.set("views", __dirname + '/views');
 
 io.on('connection', async socket => {
     console.log('Nuevo cliente conectado!');
+    console.log(items.listar)
     /* Envio los mensajes al cliente que se conectó */
     socket.emit('productos', items.listar());
 

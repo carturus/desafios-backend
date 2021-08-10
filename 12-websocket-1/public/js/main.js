@@ -2,7 +2,8 @@ const socket = io.connect();
 
 /* si recibo productos, los muestro usando handlebars */
 socket.on('productos', function (productos) {
-    console.log('productos socket client')
+    console.log('productos socket client', productos)
+
     document.getElementById('datos').innerHTML = data2TableHBS(productos)
 });
 
@@ -12,11 +13,11 @@ const form = document.querySelector('form');
 form.addEventListener('submit', event => {
     event.preventDefault();
     const data = { title: form[0].value, price: form[1].value, thumbnail: form[2].value };
-
+    console.log('soy el dat',JSON.stringify(data))
     fetch('/api/productos/guardar', {
-        headers: {
-            'Content-Type': 'application/json'
-        },
+        // headers: {
+        //     'Content-Type': 'application/json'
+        // },
         method: 'POST',
         body: JSON.stringify(data)
     })

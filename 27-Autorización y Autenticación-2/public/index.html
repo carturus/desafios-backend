@@ -12,11 +12,10 @@
   <script src="/socket.io/socket.io.js"></script>
 </head>
 
-<body>
-  <div id="bienvenida"></div>
+<body onload="getProfile(event)">
   <div class="container mt-3">
     <div class="form-group d-flex justify-content-around">
-      <h2 id="user">Hola</h2>
+      <div class="d-flex justify-content-around" id="profile"></div>
       <button class="btn btn-info mt-3" onclick="logout()">Logout</button>
     </div>
     <div class="jumbotron">
