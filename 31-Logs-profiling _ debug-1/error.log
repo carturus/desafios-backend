@@ -1,0 +1,18 @@
+[2021-08-22T17:37:47.644] [ERROR] fileError - No se puede realizar calculo Error: Cantidad no es un numero
+   [2021-08-23T20:45:18.047] [ERROR] fileError - No se puede realizar calculo Error: Cantidad no es un numero
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/31-Logs-profiling _ debug-1/server.js:226:15
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at compression (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/compression/index.js:220:5)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
