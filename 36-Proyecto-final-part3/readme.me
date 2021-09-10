@@ -1,0 +1,18 @@
+Proyecto Final Parte 2
+
+El proyecto consiste en una api rest de  una tienda ecommerce con los siguientes endpoints:
+
+http://localhost:8080/productos/borrar/{idProducto}administrador=1 
+http://localhost:8080/productos/agregar?administrador=1 
+http://localhost:8080/productos/editar/{idProducto}?administrador=1 
+http://localhost:8080/productos/listar
+http://localhost:8080/productos/listar/{idProducto}
+
+
+http://localhost:8080/carrirto/agregar/{idProducto}
+http://localhost:8080/carrirto/listar
+http://localhost:8080/carrirto/borrar/{idCarrito}
+
+Los datos son guardado en diferentes sistema de persistencia, los cuales estan en un arhcivo config.json
+Dependiendo de la variable, en
+tipoPersistenica 0 = Mongo, 1=Mysql, 2=Nube

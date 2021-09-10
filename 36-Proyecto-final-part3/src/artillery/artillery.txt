@@ -1,0 +1,8 @@
+CON ARTILLERY
+
+node --inspect server.js
+chrome://inspect
+
+artillery quick --count 50 -n 50 "http://localhost:8080/productos/listar" > result_FORK.txt
+
+artillery quick --count 50 -n 50 "http://localhost:8080/productos/listar" > result_CLUSTER.txt

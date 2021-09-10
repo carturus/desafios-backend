@@ -1,0 +1,20 @@
+        <form class="form-group d-flex justify-content-around" action="/checkout" method="GET">
+             <h1>Carrito</h1>
+             <button type="submit" class="btn btn-info mt-3">Comprar</button>
+        </form>
+
+<div class="jumbotron">
+
+    {{#if productos.length}} 
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <tr> <th>Nombre</th> <th>Descripcion</th> <th>Precio</th> <th>Foto</th></tr>
+                {{#each productos}}
+                    <tr> <td>{{this.producto.nombre}}</td> <td>{{this.producto.descripcion}}</td> <td>${{this.producto.precio}}</td><td><img width="50" src={{this.producto.foto}} alt="not found"></td> </tr>
+                {{/each}}
+            </table>
+        </div>
+    {{else}}  
+        <h3 class="alert alert-warning">No se encontraron productos</h3>
+    {{/if}}
+</div>

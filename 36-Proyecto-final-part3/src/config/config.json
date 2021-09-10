@@ -1,0 +1,12 @@
+[   {  
+    "Persistencia":"mongo",
+    "Url": "mongodb://localhost:27017/ecommerce"
+    },
+    {
+    "Persistencia":"mysql"    
+    },
+    {
+    "Persistencia":"nube",
+    "Url": "mongodb+srv://prueba:prueba@cluster0.lnfsl.mongodb.net/ecommerce?retryWrites=true&w=majority"
+    }]
+
