@@ -15,7 +15,6 @@ productosRouter.get('/listar/:id',async (req, res) => {
 productosRouter.post('/guardar', 
 middlewares.permisoAdministrador
   ,async (req, res) => {
-    console.log(req.query)
     let producto = req.body;
     res.json(await productos.guardar(producto));
 });

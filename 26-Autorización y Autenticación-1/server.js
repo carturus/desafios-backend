@@ -6,7 +6,7 @@ const io = require('socket.io')(http);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/static', express.static(__dirname + '/public'));
-//app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 //mongo
 const mongoose = require('mongoose');

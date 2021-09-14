@@ -17,11 +17,9 @@ class Carrito {
 
     async agregarPorId(id) {
         //utilizamos fecth para buscar productos en la url de API productos
-        let response = await fetch(`http://localhost:8080/productos/listar/${id}`);
-        console.log(`http://localhost:8080/productos/listar/${id}`)       
+        let response = await fetch(`http://localhost:${process.env.PORT}/productos/listar/${id}`);      
         let data= await response.json()
         let producto= {timestamp_carrito:Date.now(), producto: data}
-        console.log(data.Error)
         if(data.Error==undefined){
             return await instancia.insertarCarrito(producto)         
         }else{

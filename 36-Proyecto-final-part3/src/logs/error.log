@@ -1,2 +1,140 @@
 [2021-09-09T21:37:52.275] [ERROR] fileError - Error in Login: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
 [2021-09-09T21:48:58.065] [ERROR] fileError - Error in Login: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+[2021-09-13T22:37:26.982] [ERROR] fileError - Error in Saving user: ValidationError: telefono: Path `telefono` (5215510817621) is more than maximum allowed value (100).
+[2021-09-14T00:40:50.921] [ERROR] fileError - Error: No recipients defined
+    at SMTPConnection._formatError (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:605:19)
+    at SMTPConnection._setEnvelope (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:817:34)
+    at SMTPConnection.send (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:443:14)
+    at sendMessage (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:226:28)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:284:25
+    at SMTPConnection._actionAUTHComplete (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:1354:9)
+    at SMTPConnection.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:378:26)
+    at SMTPConnection._processResponse (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:764:20)
+    at SMTPConnection._onData (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:570:14)
+    at TLSSocket.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:522:47)
+    at TLSSocket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+    at TLSSocket.Readable.push (_stream_readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
+[2021-09-14T00:41:11.101] [ERROR] fileError - Error: No recipients defined
+    at SMTPConnection._formatError (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:605:19)
+    at SMTPConnection._setEnvelope (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:817:34)
+    at SMTPConnection.send (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:443:14)
+    at sendMessage (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:226:28)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:284:25
+    at SMTPConnection._actionAUTHComplete (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:1354:9)
+    at SMTPConnection.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:378:26)
+    at SMTPConnection._processResponse (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:764:20)
+    at SMTPConnection._onData (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:570:14)
+    at TLSSocket.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:522:47)
+    at TLSSocket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+    at TLSSocket.Readable.push (_stream_readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
+[2021-09-14T00:48:26.565] [ERROR] fileError - Error: No recipients defined
+    at SMTPConnection._formatError (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:605:19)
+    at SMTPConnection._setEnvelope (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:817:34)
+    at SMTPConnection.send (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:443:14)
+    at sendMessage (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:226:28)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:284:25
+    at SMTPConnection._actionAUTHComplete (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:1354:9)
+    at SMTPConnection.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:378:26)
+    at SMTPConnection._processResponse (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:764:20)
+    at SMTPConnection._onData (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:570:14)
+    at TLSSocket.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:522:47)
+    at TLSSocket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+    at TLSSocket.Readable.push (_stream_readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
+[2021-09-14T00:48:55.312] [ERROR] fileError - Error: No recipients defined
+    at SMTPConnection._formatError (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:605:19)
+    at SMTPConnection._setEnvelope (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:817:34)
+    at SMTPConnection.send (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:443:14)
+    at sendMessage (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:226:28)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:284:25
+    at SMTPConnection._actionAUTHComplete (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:1354:9)
+    at SMTPConnection.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:378:26)
+    at SMTPConnection._processResponse (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:764:20)
+    at SMTPConnection._onData (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:570:14)
+    at TLSSocket.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:522:47)
+    at TLSSocket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+    at TLSSocket.Readable.push (_stream_readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
+[2021-09-14T00:50:33.629] [ERROR] fileError - Error: No recipients defined
+    at SMTPConnection._formatError (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:605:19)
+    at SMTPConnection._setEnvelope (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:817:34)
+    at SMTPConnection.send (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:443:14)
+    at sendMessage (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:226:28)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-transport/index.js:284:25
+    at SMTPConnection._actionAUTHComplete (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:1354:9)
+    at SMTPConnection.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:378:26)
+    at SMTPConnection._processResponse (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:764:20)
+    at SMTPConnection._onData (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:570:14)
+    at TLSSocket.<anonymous> (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/nodemailer/lib/smtp-connection/index.js:522:47)
+    at TLSSocket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+    at TLSSocket.Readable.push (_stream_readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
+[2021-09-14T00:50:33.867] [ERROR] fileError - RestException [Error]: The 'To' number whatsapp:+nxijdenjuden is not a valid phone number.
+    at success (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/twilio/lib/base/Version.js:135:15)
+    at Promise_then_fulfilled (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:766:44)
+    at Promise_done_fulfilled (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:1229:9)
+    at Pending_become_eachMessage_task (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:1369:30)
+    at RawTask.call (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/asap/asap.js:40:19)
+    at flush (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/asap/raw.js:50:29)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11) {
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined
+}
+[2021-09-14T01:23:16.001] [ERROR] fileError - RestException [Error]: The 'To' number whatsapp:+fersfsfg is not a valid phone number.
+    at success (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/twilio/lib/base/Version.js:135:15)
+    at Promise_then_fulfilled (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:766:44)
+    at Promise_done_fulfilled (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:1229:9)
+    at Pending_become_eachMessage_task (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:1369:30)
+    at RawTask.call (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/asap/asap.js:40:19)
+    at flush (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/asap/raw.js:50:29)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11) {
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined
+}
+[2021-09-14T01:34:01.030] [ERROR] fileError - RestException [Error]: The 'To' number whatsapp:+fersfsfg is not a valid phone number.
+    at success (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/twilio/lib/base/Version.js:135:15)
+    at Promise_then_fulfilled (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:766:44)
+    at Promise_done_fulfilled (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:1229:9)
+    at Pending_become_eachMessage_task (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/q/q.js:1369:30)
+    at RawTask.call (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/asap/asap.js:40:19)
+    at flush (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/asap/raw.js:50:29)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11) {
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined
+}

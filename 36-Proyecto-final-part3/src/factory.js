@@ -6,30 +6,30 @@ class PersistenciaFactory {
     getPersistenciaProducto(tipo,url) {
         //console.log(`./persistencia_producto/${tipo}/${tipo}`)
         if(tipo=='mongo'){
-           const {ClassMongo}=require('./persistencia_producto/persistenciaProducto')
+           const {ClassMongo}=require('./persistencia/persistenciaProducto')
            return new ClassMongo(url); 
         }
         if(tipo=='nube'){
-           const {ClassMongo}=require('./persistencia_producto/persistenciaProducto')
+           const {ClassMongo}=require('./persistencia/persistenciaProducto')
            return new ClassMongo(url); 
         }
         if(tipo=='mysql'){
-            const {ClassMySQL} =require('./persistencia_producto/persistenciaProducto')
+            const {ClassMySQL} =require('./persistencia/persistenciaProducto')
             return new ClassMySQL; 
          }
     }
     getPersistenciaCarrito(tipo,url) {
         if(tipo=='mongo'){
            console.log(tipo)
-            const {ClassMongo}=require('./persistencia_carrito/persistenciaCarrito')
+            const {ClassMongo}=require('./persistencia/persistenciaCarrito')
             return new ClassMongo(url); 
          }
          if(tipo=='nube'){
-            const {ClassMongo}=require('./persistencia_carrito/persistenciaCarrito')
+            const {ClassMongo}=require('./persistencia/persistenciaCarrito')
             return new ClassMongo(url); 
          }
          if(tipo=='mysql'){
-             const {ClassMySQL} =require('./persistencia_carrito/persistenciaCarrito')
+             const {ClassMySQL} =require('./persistencia/persistenciaCarrito')
              return new ClassMySQL; 
           }
      }

@@ -2,6 +2,7 @@ const express = require('express');
 const authRouter = express.Router();
 const passport = require('passport');
 const upload=require('../middleware/upload')
+const {loggerWarn}= require('../utils/logers')
 
 //Sign UP
 authRouter.get('/signup',(req,res)=>{ 
@@ -39,7 +40,7 @@ authRouter.get('/logout', (req, res) => {
       res.sendFile(__dirname + '/public/index.html');
     }
     else {
-      console.log('user NO logueado');
+      loggerWarn.warn('user NO logueado');
       res.render('login');
     }
   })

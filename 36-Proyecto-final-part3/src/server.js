@@ -11,7 +11,9 @@ dotenv.config();
 const { fork } = require('child_process');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
+const sender= require('./utils/notification')
 const {loggerConsola,loggerWarn,loggerError}= require('./utils/logers')
+
 
 //mongo
 const mongoose = require('mongoose');
@@ -33,7 +35,7 @@ app.use(session({
 
 //  PASSPORT
 const passport = require('passport');
-const bCrypt = require('bCrypt');
+const bCrypt = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
 
 passport.use('login', new LocalStrategy({
@@ -99,7 +101,8 @@ var isValidPassword = function(user, password){
               loggerError.error('Error in Saving user: '+err);  
               throw err;  
             }
-             loggerConsola.info('User Registration succesful',newUser);   
+            sender.sendNotificationRegistro(newUser)
+            loggerConsola.info('User Registration succesful',newUser);   
             return done(null, newUser);
           });
         }
@@ -179,13 +182,13 @@ if ((process.env.MODO=='FORK')?false:cluster.isMaster) {
       await mongoose.connect(config.MONGO_DESAFIOS_URL, { useNewUrlParser: true, useUnifiedTopology: true });
      }
      catch(err){
-       console.log("erro mongo",err)
+      loggerError.error("erro mongo",err)
      }
-      console.log(`servidor escuchando en http://localhost:${PORT}`);
+     loggerConsola.info(`servidor escuchando en http://localhost:${PORT}`);
   });
   // en caso de error, avisar
   server.on('error', error => {
-      console.log('error en el servidor:', error);
+    loggerError.error('error en el servidor:', error);
   });
 
 }
