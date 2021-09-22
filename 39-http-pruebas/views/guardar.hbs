@@ -1,0 +1,17 @@
+
+<div class="jumbotron">
+    <div class="form-group bg-color-info" >
+        <form class="form-group d-flex justify-content-around" action="/logout" method="GET">
+             <h2 id="user">Bienvenido {{usuario}} tienes segundos{{time}}</h2>
+             <button type="submit" class="btn btn-info mt-3">Logout</button>
+        </form>
+
+       <h1>Ingrese de Productos</h1>
+       <form action="/productos/guardar" method="POST">
+          Nombre: <input   class="form-control" type="text" name="title" /> Precio:
+          <input   class="form-control" type="number" name="price" /> Foto URL:
+          <input  class="form-control" type="text" name="thumbnail" />
+         <button type="submit" class="btn btn-primary mt-5" >Enviar</button>
+    </form>
+    </div>
+</div>

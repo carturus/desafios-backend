@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.4",
     "bcrypt": "^5.0.1",
+    "chai": "^4.3.4",
     "compression": "^1.7.4",
     "connect-mongo": "^4.4.1",
     "cookie-parser": "^1.4.5",
@@ -36,6 +38,7 @@
     "passport-facebook": "^3.0.0",
     "passport-local": "^1.0.0",
     "socket.io": "^4.1.2",
+    "supertest": "^6.1.6",
     "twilio": "^3.67.1"
   },
   "bugs": {
@@ -43,5 +46,8 @@
   },
   "homepage": "https://github.com/carturus/desafios-backend#readme",
   "description": "",
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "^9.1.1",
+    "request": "^2.88.2"
+  }
 }
