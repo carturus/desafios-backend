@@ -1,0 +1,5 @@
+{
+"MONGO_LOCAL":"mongodb://localhost:27017/desafios",
+"MONGO_ATLAS":"mongodb+srv://prueba:prueba@cluster0.lnfsl.mongodb.net/desafios?retryWrites=true&w=majority"
+
+}
