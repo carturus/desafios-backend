@@ -1,0 +1,53 @@
+{listarProductos {
+
+ _id
+
+ title
+
+ price
+
+ thumbnail
+
+}}
+
+
+{buscarProducto(_id:"6110373b57554a5be15aea03") {
+
+ _id
+
+ title
+
+ price
+
+ thumbnail
+
+}}
+
+
+
+mutation{guardarProducto(title:"nuevo",price: 100,thumbnail:"nuevo producto") {
+
+ _id
+
+ title
+
+ price
+
+ thumbnail
+
+}}
+
+mutation{borrarProducto(_id:"") }{}
+
+mutation{actualizarProducto(id:"id",title:"nuevo",price: 100,thumbnail:"nuevo producto") {
+
+ _id
+
+ title
+
+ price
+
+ thumbnail
+
+}}
+

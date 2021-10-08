@@ -1,0 +1,341 @@
+[2021-08-22T17:37:47.644] [ERROR] fileError - No se puede realizar calculo Error: Cantidad no es un numero
+   [2021-08-23T20:45:18.047] [ERROR] fileError - No se puede realizar calculo Error: Cantidad no es un numero
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/31-Logs-profiling _ debug-1/server.js:226:15
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at compression (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/compression/index.js:220:5)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+[2021-09-14T16:21:18.326] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:14:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:26:5
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:21:20.623] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:14:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:26:5
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:21:35.864] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:14:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:26:5
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:23:46.145] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:14:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:23:52.663] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:14:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:26:00.376] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:18:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:26:02.570] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:18:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:26:21.017] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:18:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:28:20.823] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:18:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:30:59.945] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:18:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:31:32.581] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:19:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:32:23.178] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:20:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:33:31.191] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:20:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:34:22.684] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:20:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T16:36:54.713] [ERROR] fileError - No se puede realizar calculo ReferenceError: fork is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:20:21)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T17:57:11.506] [ERROR] fileError - No se puede realizar calculo ReferenceError: numbersObjeto is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:30:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:16
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T17:57:11.552] [ERROR] fileError - No se puede realizar calculo ReferenceError: numbersObjeto is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:30:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:28:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T17:58:55.158] [ERROR] fileError - No se puede realizar calculo ReferenceError: numbersObjeto is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:28:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:27:16
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+[2021-09-14T17:58:55.184] [ERROR] fileError - No se puede realizar calculo ReferenceError: numbersObjeto is not defined
+    at randomEjercicio (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/api/ejercicios.js:28:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/37-Creacion-proyectos/routes/ejerciciosRouter.js:28:14
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:174:3)
+    at router (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:317:13)
+    at /Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:335:12)
+    at next (/Volumes/MEM/Developer/CODER/BACKEND/desafios/DesafioRepositorioGit/node_modules/express/lib/router/index.js:275:10)
