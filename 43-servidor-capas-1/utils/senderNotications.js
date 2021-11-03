@@ -56,20 +56,22 @@ transporterGmail.sendMail(mailOptions, (err, info) => {
  }
 }
 //SMS TWILIO
-const accountSid = config.ACCOUNT_SID;
-const authToken = config.AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken); 
+// const accountSid = config.ACCOUNT_SID;
+// const authToken = config.AUTH_TOKEN;
+// const client = require('twilio')(accountSid, authToken); 
  
 const sendSMS=(mensaje)=>{
-  console.log("soy el token",authToken)
-client.messages 
-      .create({ 
-         body: `Usuario: ${mensaje.author.name} Fecha:${mensaje.date} Texto:${mensaje.text}`,  
-         messagingServiceSid: 'MG9baeec677239b2550463dc58c9804181',      
-         to: config.MOVIL
-       }) 
-      .then(message => console.log(message.sid)) 
-      .done();
+//   console.log("soy el token",authToken)
+// client.messages 
+//       .create({ 
+//          body: `Usuario: ${mensaje.author.name} Fecha:${mensaje.date} Texto:${mensaje.text}`,  
+//          messagingServiceSid: 'MG9baeec677239b2550463dc58c9804181',      
+//          to: config.MOVIL
+//        }) 
+//       .then(message => console.log(message.sid)) 
+//       .done();
+
+console.log(mensaje)
       
       }
 

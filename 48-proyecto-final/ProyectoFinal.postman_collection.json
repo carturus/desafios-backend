@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "bbf1a7f9-a5ae-4534-831b-2c7525d667db",
+		"name": "ProyectoFinal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ProductoListar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyMjI1MywiZXhwIjoxNjM1OTIyODUzfQ.f0fuv_1qPB_Ez8jAxHN8p29FPzD9_V5wtav7gKxkG70",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/productos/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"productos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductoBuscar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyMzc3NSwiZXhwIjoxNjM1OTI0Mzc1fQ.VNvevvr6ul2yLV6UXtsnWDYj-p6l4o4tbB0ZroIsYwQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/productos/buscar/:id_producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"productos",
+						"buscar",
+						":id_producto"
+					],
+					"variable": [
+						{
+							"key": "id_producto",
+							"value": "61108ff1f1ac1a53c861a135"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductoGuardar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyMjk2OCwiZXhwIjoxNjM1OTIzNTY4fQ.sY-YAUgiaMvnT7qqo4zzBTTM__CZ1jRbimZYteqB5oQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\n            \"title\": \"nuevo\",\n            \"price\": 6000,\n            \"thumbnail\": \"http://nuevo\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/productos/guardar/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"productos",
+						"guardar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductoActualizar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNTcyNywiZXhwIjoxNjM1OTI2MzI3fQ.ygELVx0r63mXvWDQGsDo9IaOqHNbjjxupcrs62dBS58",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": \"61108ff1f1ac1a53c861a135\",\n        \"title\": \"new\",\n        \"price\": 6000,\n        \"thumbnail\": \"http:///coler\",\n        \"__v\": 0\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/productos/actualizar/:id_producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"productos",
+						"actualizar",
+						":id_producto"
+					],
+					"variable": [
+						{
+							"key": "id_producto",
+							"value": "61108ff1f1ac1a53c861a135fegerge"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductoBorrar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNTcyNywiZXhwIjoxNjM1OTI2MzI3fQ.ygELVx0r63mXvWDQGsDo9IaOqHNbjjxupcrs62dBS58",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/productos/borrar/:id_producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"productos",
+						"borrar",
+						":id_producto"
+					],
+					"variable": [
+						{
+							"key": "id_producto",
+							"value": "617fa6fe205afe17407ee4ddfgdfgdf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CarritoListar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNDM5MCwiZXhwIjoxNjM1OTI0OTkwfQ.7FasIMYlRiEijROtAettAoD5YnHpOi81IfUl05R9i_k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/carrito/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"carrito",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CarritoBuscar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyMzc3NSwiZXhwIjoxNjM1OTI0Mzc1fQ.VNvevvr6ul2yLV6UXtsnWDYj-p6l4o4tbB0ZroIsYwQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/carrito/buscar/:correo_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"carrito",
+						"buscar",
+						":correo_usuario"
+					],
+					"variable": [
+						{
+							"key": "correo_usuario",
+							"value": "new@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CarritoGuardar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyMzc3NSwiZXhwIjoxNjM1OTI0Mzc1fQ.VNvevvr6ul2yLV6UXtsnWDYj-p6l4o4tbB0ZroIsYwQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id_producto\": \"61108ff1f1ac1a53c861a135\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/carrito/guardar/:correo_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"carrito",
+						"guardar",
+						":correo_usuario"
+					],
+					"variable": [
+						{
+							"key": "correo_usuario",
+							"value": "nuevo@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CarritoActualizar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNTQxMiwiZXhwIjoxNjM1OTI2MDEyfQ.yMi0q18M7dVVMrFd0kX6UaOrvoUxfe8VpgRluIHTwTo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"_id\": \"617f1f67de8aaebd4c3b88e5\",\n        \"timestamp_carrito\": \"1635721063664\",\n        \"mail\": \"pumas@gmail.com\",\n        \"productos\": [\n\n            {\n                \"_id\": \"61108ff1f1ac1a53c861a135\",\n                \"title\": \"gggg\",\n                \"price\": 6000,\n                \"thumbnail\": \"http:///hvgvgvhv\",\n                \"__v\": 0\n            },\n                        {\n                \"_id\": \"61108ff1f1ac1a53c861a135\",\n                \"title\": \"gggg\",\n                \"price\": 6000,\n                \"thumbnail\": \"http:///hvgvgvhv\",\n                \"__v\": 0\n            }\n        ],\n        \"__v\": 0\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/carrito/actualizar/:correo_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"carrito",
+						"actualizar",
+						":correo_usuario"
+					],
+					"variable": [
+						{
+							"key": "correo_usuario",
+							"value": "otro@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CarritoBorrar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNTQxMiwiZXhwIjoxNjM1OTI2MDEyfQ.yMi0q18M7dVVMrFd0kX6UaOrvoUxfe8VpgRluIHTwTo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/carrito/borrar/:correo_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"carrito",
+						"borrar",
+						":correo_usuario"
+					],
+					"variable": [
+						{
+							"key": "correo_usuario",
+							"value": "otro@ftft"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdenesListar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyMzMzMywiZXhwIjoxNjM1OTIzOTMzfQ.erDI9KX98dsTg6Zf_LsQfEy7cl6FnXXmf3paXVEvcsQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/ordenes/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"ordenes",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdenBuscar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNDc4MywiZXhwIjoxNjM1OTI1MzgzfQ.1M1aEbX517_20iHdC46DSE0oIsjUOypomxf_v8Q2dX0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/ordenes/buscar/:id_orden",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"ordenes",
+						"buscar",
+						":id_orden"
+					],
+					"variable": [
+						{
+							"key": "id_orden",
+							"value": "61820fcb7d0057f1acade787"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdenGuardar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNDc4MywiZXhwIjoxNjM1OTI1MzgzfQ.1M1aEbX517_20iHdC46DSE0oIsjUOypomxf_v8Q2dX0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"estado\": \"generada\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/ordenes/guardar/:correo_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"ordenes",
+						"guardar",
+						":correo_usuario"
+					],
+					"variable": [
+						{
+							"key": "correo_usuario",
+							"value": "nuevo@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdenActualizar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNTQxMiwiZXhwIjoxNjM1OTI2MDEyfQ.yMi0q18M7dVVMrFd0kX6UaOrvoUxfe8VpgRluIHTwTo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n  \"estado\":\"enviada\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/ordenes/actualizar/:id_orden",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"ordenes",
+						"actualizar",
+						":id_orden"
+					],
+					"variable": [
+						{
+							"key": "id_orden",
+							"value": "617fa6742c92bb13380dede"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdenBorrar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYxN2Y3M2RmY2Q4OGZlMmIzOWQyMWFhYyIsInVzZXJuYW1lIjoiY3VldmFzIiwicGFzc3dvcmQiOiIkMmIkMTAkendvWUNoR1ZVdWVnL0JuL1ZWa2J4ZVEvd0VJZmt2ZmdBODRZRlhtdHFObFFCLk51aG11NnkiLCJtYWlsIjoiY3VldmFzQGh3dWlod3giLCJub21icmUiOiJBUlRVUk8gQ1VFVkFTIFZFTEFaUVVFWiIsImRpcmVjY2lvbiI6ImN1ZXZhcyIsIl9fdiI6MH0sImlhdCI6MTYzNTkyNTQxMiwiZXhwIjoxNjM1OTI2MDEyfQ.yMi0q18M7dVVMrFd0kX6UaOrvoUxfe8VpgRluIHTwTo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/ordenes/borrar/:id_orden",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"ordenes",
+						"borrar",
+						":id_orden"
+					],
+					"variable": [
+						{
+							"key": "id_orden",
+							"value": "617fa6742c92bb133808af47"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
